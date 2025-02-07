@@ -811,7 +811,7 @@ ui:
     create_tag: Create Tag
     edit_tag: Edit Tag
     ask_a_question: Add Research Question
-    edit_question: Edit Question
+    edit_question: Edit Research Question
     edit_answer: Edit Answer
     search: Search
     posts_containing: Posts containing
@@ -1109,8 +1109,8 @@ ui:
     more: More
     wiki: Wiki
   ask:
-    title: Add Question
-    edit_title: Edit Question
+    title: Add Research Question
+    edit_title: Edit Research Question
     default_reason: Edit question
     default_first_reason: Add question
     similar_questions: Similar questions
@@ -1466,7 +1466,7 @@ ui:
     signup: Sign up
     logout: Log out
     verify: Verify
-    add_question: Add question
+    add_question: Add Research Question
     approve: Approve
     reject: Reject
     skip: Skip
