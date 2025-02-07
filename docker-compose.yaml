@@ -20,7 +20,7 @@ services:
   answer:
     build: .
     ports:
-      - '9080:80'
+      - '9090:80'
     restart: on-failure
     environment:
       - LOG_LEVEL=debug    # 设置日志级别
