@@ -810,7 +810,7 @@ ui:
     tag_wiki: tag wiki
     create_tag: Create Tag
     edit_tag: Edit Tag
-    ask_a_question: Add Question
+    ask_a_question: Add Research Question
     edit_question: Edit Question
     edit_answer: Edit Answer
     search: Search
