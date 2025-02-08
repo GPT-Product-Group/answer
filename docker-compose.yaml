@@ -17,10 +17,20 @@
 
 version: "3"
 services:
-  answer:
+  answer9090:
     build: .
     ports:
       - '9090:80'
+    restart: on-failure
+    environment:
+      - LOG_LEVEL=debug    # 设置日志级别
+    volumes:
+      - ./answer-data:/data
+
+  answer9080:
+    build: .
+    ports:
+      - '9080:80'
     restart: on-failure
     environment:
       - LOG_LEVEL=debug    # 设置日志级别
