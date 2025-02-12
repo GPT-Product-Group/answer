@@ -40,8 +40,8 @@ import classnames from 'classnames';
 import { userCenter, floppyNavigation } from '@/utils';
 import {
   loggedUserInfoStore,
-  siteInfoStore,
-  brandingStore,
+  // siteInfoStore,
+  // brandingStore,
   loginSettingStore,
   themeSettingStore,
   sideNavStore,
@@ -61,8 +61,8 @@ const Header: FC = () => {
   const { user, clear: clearUserStore } = loggedUserInfoStore();
   const { t } = useTranslation();
   const [searchStr, setSearch] = useState('');
-  const siteInfo = siteInfoStore((state) => state.siteInfo);
-  const brandingInfo = brandingStore((state) => state.branding);
+  // const siteInfo = siteInfoStore((state) => state.siteInfo);
+  // const brandingInfo = brandingStore((state) => state.branding);
   const loginSetting = loginSettingStore((state) => state.login);
   const { updateReview, updateVisible } = sideNavStore();
   const { data: redDot } = useQueryNotificationStatus();
@@ -145,7 +145,7 @@ const Header: FC = () => {
         />
 
         <div className="d-flex justify-content-between align-items-center nav-grow flex-nowrap">
-          <Navbar.Brand to="/" as={Link} className="lh-1 me-0 me-sm-5 p-0">
+          {/* <Navbar.Brand to="/" as={Link} className="lh-1 me-0 me-sm-5 p-0">
             {brandingInfo.logo ? (
               <>
                 <img
@@ -163,7 +163,7 @@ const Header: FC = () => {
             ) : (
               <span>{siteInfo.name}</span>
             )}
-          </Navbar.Brand>
+          </Navbar.Brand> */}
 
           {/* mobile nav */}
           <div className="d-flex lg-none align-items-center flex-lg-nowrap">
